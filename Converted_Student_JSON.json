@@ -1,0 +1,302 @@
+{
+    "Students": {
+        "Student": [
+            {
+                "Name": {
+                    "MiddleName": "Nirmal", 
+                    "LastName": "Gavarraju", 
+                    "FirstName": "Venkat"
+                }, 
+                "Contact": {
+                    "Phone": {
+                        "Primary": "9666836967"
+                    }, 
+                    "Email": {
+                        "Primary": "venkatnirmal.1729@gmail.com", 
+                        "Secondary": "venkatnirmal.1729@live.com"
+                    }
+                }, 
+                "DOB": "1993-07-31", 
+                "PsSem": "2", 
+                "Cgpa": "8.19", 
+                "Prereqs": {
+                    "xml": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "CProgramming": {
+                        "completion": "yes", 
+                        "grade": "10"
+                    }, 
+                    "MachineLearning": {
+                        "completion": "yes", 
+                        "grade": "10"
+                    }, 
+                    "DataMining": {
+                        "completion": "true", 
+                        "grade": "10"
+                    }, 
+                    "OOP": {
+                        "completion": "yes", 
+                        "grade": "8"
+                    }, 
+                    "Databases": {
+                        "completion": "true", 
+                        "grade": "8"
+                    }
+                }, 
+                "Address": {
+                    "City": "Hyderabad", 
+                    "DoorNo": "7-2-10/49", 
+                    "Country": "India", 
+                    "PinCode": "500079", 
+                    "State": "Telangana", 
+                    "Street": "Laxmi Ganesh Nagar"
+                }, 
+                "Id": {
+                    "PSTS": "PS", 
+                    "Place": "H", 
+                    "Rank": "523", 
+                    "Branch1": "C6", 
+                    "Year": "2011"
+                }
+            }, 
+            {
+                "Name": {
+                    "MiddleName": "Varma", 
+                    "LastName": "Dattada", 
+                    "FirstName": "Kasyap"
+                }, 
+                "Contact": {
+                    "Phone": {
+                        "Primary": "9666823599", 
+                        "Secondary": "9440419555"
+                    }, 
+                    "Email": {
+                        "Primary": "kasyapvarma@live.com"
+                    }
+                }, 
+                "DOB": "1993-08-13", 
+                "PsSem": "2", 
+                "Cgpa": "8.53", 
+                "Prereqs": {
+                    "xml": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "CProgramming": {
+                        "completion": "yes", 
+                        "grade": "10"
+                    }, 
+                    "MachineLearning": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "DataMining": {
+                        "completion": "true", 
+                        "grade": "10"
+                    }, 
+                    "OOP": {
+                        "completion": "yes", 
+                        "grade": "8"
+                    }, 
+                    "Databases": {
+                        "completion": "true", 
+                        "grade": "8"
+                    }
+                }, 
+                "Address": {
+                    "City": "Machilipatnam", 
+                    "DoorNo": "2-4/84", 
+                    "Country": "India", 
+                    "PinCode": "512484", 
+                    "State": "Andhra Pradesh", 
+                    "Street": "Vivek Nagar"
+                }, 
+                "Id": {
+                    "PSTS": "PS", 
+                    "Place": "H", 
+                    "Rank": "278", 
+                    "Branch1": "C6", 
+                    "Year": "2011"
+                }
+            }, 
+            {
+                "Name": {
+                    "LastName": "Raja", 
+                    "FirstName": "Praveen"
+                }, 
+                "Contact": {
+                    "Phone": {
+                        "Primary": "9666823599"
+                    }, 
+                    "Email": {
+                        "Primary": "kasyapvarma@live.com"
+                    }
+                }, 
+                "DOB": "1993-10-1", 
+                "PsSem": "2", 
+                "Cgpa": "8.53", 
+                "Prereqs": {
+                    "xml": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "CProgramming": {
+                        "completion": "yes", 
+                        "grade": "8"
+                    }, 
+                    "MachineLearning": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "DataMining": {
+                        "completion": "false", 
+                        "grade": "0"
+                    }, 
+                    "OOP": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "Databases": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }
+                }, 
+                "Address": {
+                    "City": "Hyderabad", 
+                    "DoorNo": "12-32/4", 
+                    "Country": "India", 
+                    "PinCode": "500080", 
+                    "State": "Telangana", 
+                    "Street": "Vanasthalipuram"
+                }, 
+                "Id": {
+                    "PSTS": "PS", 
+                    "Place": "H", 
+                    "Rank": "115", 
+                    "Branch1": "A3", 
+                    "Year": "2011"
+                }
+            }, 
+            {
+                "Name": {
+                    "MiddleName": "Lakshman", 
+                    "LastName": "Gali", 
+                    "FirstName": "RaviRaj"
+                }, 
+                "Contact": {
+                    "Phone": {
+                        "Primary": "9666815251"
+                    }, 
+                    "Email": {
+                        "Primary": "raviraj.raj375@gmail.com", 
+                        "Secondary": "raviraj.raj375@yahoo.com"
+                    }
+                }, 
+                "DOB": "1994-08-16", 
+                "PsSem": "1", 
+                "Cgpa": "8", 
+                "Prereqs": {
+                    "xml": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "CProgramming": {
+                        "completion": "yes", 
+                        "grade": "7"
+                    }, 
+                    "MachineLearning": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "DataMining": {
+                        "completion": "No", 
+                        "grade": "0"
+                    }, 
+                    "OOP": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "Databases": {
+                        "completion": "false", 
+                        "grade": "0"
+                    }
+                }, 
+                "Address": {
+                    "City": "Kakinada", 
+                    "DoorNo": "65/6-32", 
+                    "Country": "India", 
+                    "PinCode": "533003", 
+                    "State": "Andhra Pradesh", 
+                    "Street": "Meher Nagar"
+                }, 
+                "Id": {
+                    "PSTS": "PS", 
+                    "Place": "H", 
+                    "Rank": "401", 
+                    "Branch1": "A2", 
+                    "Year": "2011"
+                }
+            }, 
+            {
+                "Name": {
+                    "LastName": "Karthik", 
+                    "FirstName": "Vemuri"
+                }, 
+                "Contact": {
+                    "Phone": {
+                        "Primary": "9640129184"
+                    }, 
+                    "Email": {
+                        "Primary": "vskb99@gmail.com"
+                    }
+                }, 
+                "DOB": "1993-08-13", 
+                "PsSem": "1", 
+                "Cgpa": "7.93", 
+                "Prereqs": {
+                    "xml": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "CProgramming": {
+                        "completion": "yes", 
+                        "grade": "10"
+                    }, 
+                    "MachineLearning": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "DataMining": {
+                        "completion": "no", 
+                        "grade": "0"
+                    }, 
+                    "OOP": {
+                        "completion": "yes", 
+                        "grade": "8"
+                    }, 
+                    "Databases": {
+                        "completion": "true", 
+                        "grade": "8"
+                    }
+                }, 
+                "Address": {
+                    "City": "Mumbai", 
+                    "DoorNo": "2-4/84", 
+                    "Country": "India", 
+                    "PinCode": "716484", 
+                    "State": "Maharashtra", 
+                    "Street": "Dadar"
+                }, 
+                "Id": {
+                    "PSTS": "PS", 
+                    "Place": "H", 
+                    "Rank": "658", 
+                    "Branch1": "C6", 
+                    "Year": "2010"
+                }
+            }
+        ]
+    }
+}

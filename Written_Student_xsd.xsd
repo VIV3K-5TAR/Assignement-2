@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:complexType name="Students">
+    <xs:sequence>
+        <xs:element name="Student" type="StudentType" minOccurs="1"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="StudentType">
+	<xs:sequence>
+		<xs:element name="Name" type="NameType"/>
+		<xs:element name="Id" type="IdType"/>
+        <xs:element name="DOB" type="xs:date"/>
+		<xs:element name="Prereqs" type="PrereqType"/>
+        <xs:element name="Address" type="AddressType"/>
+		<xs:element name="Contact" type="ContactType"/>
+		<xs:element name="Cgpa">
+			<xs:simpleType>
+				<xs:restriction base="xs:double">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="10"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="PsSem">
+			<xs:simpleType>
+				<xs:restriction base="xs:decimal">
+					<xs:minInclusive value="1"/>
+					<xs:maxInclusive value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="NameType">
+	<xs:sequence>
+        <xs:element name="FirstName">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[A-Z]([a-z][A-Z])*"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="MiddleName" minOccurs="0">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[A-Z]([a-z][A-Z])*"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="LastName">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[A-Z]([a-z][A-Z])*"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IdType"><!--Constraints to ID-->
+	<xs:sequence>
+		<xs:element name="Year">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="2010"/>
+                    <xs:maxInclusive value="2011"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+
+		<xs:element name="Branch1" type="branchcodes"/>
+
+        <xs:element name="Branch2" type="branchcodes" minOccurs="0"/>
+
+        <xs:element name="PSTS">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="PS"/>
+                    <xs:enumeration value="TS"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="Rank">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[0-9][0-9][0-9]"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="Place" type="xs:string" fixed="H"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="branchcodes">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="([A1|A2|A3|A4|A5|A7|AA|B1|B2|B3|B4|B5|C6])"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="PrereqType">
+	<xs:sequence>
+		<xs:element name="CProgramming" type="subject"/>
+		<xs:element name="OOP" type="subject"/>
+		<xs:element name="Databases" type="subject"/>
+		<xs:element name="MachineLearning" type="subject"/>
+        <xs:element name="DataMining" type="subject"/>
+        <xs:element name="xml" type="subject"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subject">
+    <xs:sequence>
+        <xs:element name="completion" type="truefalse"/>
+        <xs:element name="grade" type="gradescaletoten"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="truefalse">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="([Yes|yes|no|No|True|False|true|false])"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="gradescaletoten">
+   <xs:restriction base="xs:integer">
+       <xs:minInclusive value="0"/>
+       <xs:maxInclusive value="10"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="ContactType">
+	<xs:sequence>
+		<xs:element name="Phone" type="PhoneType"/>
+		<xs:element name="Email" type="EmailType"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AddressType">
+    <xs:sequence>
+        <xs:element name="DoorNo" type="DoorNoType""/>
+        <xs:element name="Street" type="OnlyChars"/>
+        <xs:element name="City" type="OnlyChars"/>
+        <xs:element name="State" type="OnlyChars"/>
+        <xs:element name="Country" type="OnlyChars"/>
+        <xs:element name="PinCode" type="Onlydigits"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="DoorNoType">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="([0-9][a-z][A-Z]-/)+"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="OnlyChars">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="([a-z][A-Z] )+"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="Onlydigits">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]+"
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="PhoneType">
+    <xs:sequence>
+        <xs:element name="Primary" type="phonenumber"/>
+        <xs:element name="Secondary" type="phonenumber" minOccurs="0"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EmailType"><!--Constraints to EmailID-->
+        <xs:sequence>
+            <xs:element name="Primary" type="mail"/>
+            <xs:element name="Secondary" type="mail" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+<xs:simpleType name="phonenumber">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[789][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="mail">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="([0-9][a-z][A-Z])+@([a-z])+.com"/>
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,77 @@
+<<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<Students>
+    <Student>
+
+        <Name>
+            <FirstName>Venkat</FirstName>
+            <MiddleName>Nirmal</MiddleName>
+            <LastName>Gavarraju</LastName>
+        </Name>
+
+        <Id>
+            <Year>2011</Year>
+            <Branch1>C6</Branch1>
+            <PSTS>PS</PSTS>
+            <Rank>523</Rank>
+            <Place>H</Place>
+        </Id>
+
+        <DOB>
+            1993-07-31
+        </DOB>
+
+        <Prereqs>
+            <CProgramming>
+                <completion>yes</completion>
+                <grade>10</grade>
+            </CProgramming>
+            <OOP>
+                <completion>Yes</completion>
+                <grade>8</grade>
+            </OOP>
+            <Databases>
+                <completion>true</completion>
+                <grade>8</grade>
+            </Databases>
+            <MachineLearning>
+                <completion>yes</completion>
+                <grade>10</grade>
+            </MachineLearning>
+            <DataMining>
+                <completion>True</completion>
+                <grade>10</grade>
+            </DataMining>
+            <xml>
+                <completion>No</completion>
+                <grade>0</grade>
+            </xml>
+        </Prereqs>
+
+        <Address>
+            <DoorNo>7-2-170/49</DoorNo>
+            <Street>Laxmi Ganesh Nagar</Street>
+            <City>Hyderabad</City>
+            <State>Telangana</State>
+            <Country>India</Country>
+            <PinCode>50079</PinCode>
+        </Address>
+
+        <Contact>
+            <Phone>
+                <Primary>9666836967</Primary>
+            </Phone>
+            <Email>
+                <Primary>venkatnirmal.1729@gmail.com</Primary>
+                <Secondary>venkatnirmal.1729@live.com</Secondary>
+            </Email>
+        </Contact>
+
+        <Cgpa>8.19</Cgpa>
+
+        <PsSem>2</PsSem>
+
+    </Student>
+</Students>
